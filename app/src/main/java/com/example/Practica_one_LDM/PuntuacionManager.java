@@ -3,7 +3,7 @@ package com.example.Practica_one_LDM;
 public class PuntuacionManager {
     private static PuntuacionManager instancia;
     private int puntos = 0;
-    private String nombre = "";
+    private String nombre = " ";
 
     private PuntuacionManager() {
         // Constructor privado para evitar instancias múltiples
