@@ -1,4 +1,4 @@
-package com.example.holamundo;
+package com.example.Practica_one_LDM;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,36 +6,35 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class MainActivity1 extends AppCompatActivity {
+public class MainActivity5 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main5);
     }
-    public void comprobar_respuesta(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg_p1);
+    public void siguiente(View view) {
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg_p5);
         int checkedId = radioGroup.getCheckedRadioButtonId();
         PuntuacionManager puntuacionManager = PuntuacionManager.getInstance();
         if (checkedId == -1) {
             Toast.makeText(this, "Selecciona una respuesta", Toast.LENGTH_SHORT).show();
-        } else if (checkedId == R.id.opcion_a_p1) {
+        } else if (checkedId == R.id.opcion_a_p5) {
+            RadioButton radioButton = (RadioButton) findViewById(checkedId);
+            puntuacionManager.restarPuntos(2);
+            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
+        } else if(checkedId == R.id.opcion_b_p5) {
+            RadioButton radioButton = (RadioButton) findViewById(checkedId);
+            puntuacionManager.restarPuntos(2);
+            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
+        } else if(checkedId == R.id.opcion_c_p5) {
             RadioButton radioButton = (RadioButton) findViewById(checkedId);
             puntuacionManager.sumarPuntos(3);
             Toast.makeText(this, "Correcto, suma 3 puntos", Toast.LENGTH_SHORT).show();
-        } else if(checkedId == R.id.opcion_b_p1) {
-            RadioButton radioButton = (RadioButton) findViewById(checkedId);
-            puntuacionManager.restarPuntos(2);
-            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
-        } else if(checkedId == R.id.opcion_c_p1) {
-            RadioButton radioButton = (RadioButton) findViewById(checkedId);
-            puntuacionManager.restarPuntos(2);
-            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
         }
         Button button_enviar = (Button) findViewById(R.id.enviar_btm);
         button_enviar.setEnabled(false);
@@ -54,7 +53,7 @@ public class MainActivity1 extends AppCompatActivity {
     }
 
     public void siguiente_pregunta(View view) {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, MainActivityFinal.class);
         startActivity(intent);
     }
 }

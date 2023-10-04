@@ -1,4 +1,4 @@
-package com.example.holamundo;
+package com.example.Practica_one_LDM;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,29 +10,28 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main1);
     }
-
-    public void siguiente(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg_p2);
+    public void comprobar_respuesta(View view) {
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg_p1);
         int checkedId = radioGroup.getCheckedRadioButtonId();
         PuntuacionManager puntuacionManager = PuntuacionManager.getInstance();
         if (checkedId == -1) {
             Toast.makeText(this, "Selecciona una respuesta", Toast.LENGTH_SHORT).show();
-        } else if (checkedId == R.id.opcion_a_p2) {
-            RadioButton radioButton = (RadioButton) findViewById(checkedId);
-            puntuacionManager.restarPuntos(2);
-            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
-        } else if(checkedId == R.id.opcion_b_p2) {
+        } else if (checkedId == R.id.opcion_a_p1) {
             RadioButton radioButton = (RadioButton) findViewById(checkedId);
             puntuacionManager.sumarPuntos(3);
             Toast.makeText(this, "Correcto, suma 3 puntos", Toast.LENGTH_SHORT).show();
-        } else if(checkedId == R.id.opcion_c_p2) {
+        } else if(checkedId == R.id.opcion_b_p1) {
+            RadioButton radioButton = (RadioButton) findViewById(checkedId);
+            puntuacionManager.restarPuntos(2);
+            Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
+        } else if(checkedId == R.id.opcion_c_p1) {
             RadioButton radioButton = (RadioButton) findViewById(checkedId);
             puntuacionManager.restarPuntos(2);
             Toast.makeText(this, "Error, pierdes 2 puntos", Toast.LENGTH_SHORT).show();
@@ -42,6 +41,7 @@ public class MainActivity2 extends AppCompatActivity {
         Button button_siguiente = (Button) findViewById(R.id.next_btm);
         button_siguiente.setEnabled(true);
     }
+
     public void reiniciar_game(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         PuntuacionManager puntuacionManager = PuntuacionManager.getInstance();
@@ -53,7 +53,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void siguiente_pregunta(View view) {
-        Intent intent = new Intent(this, MainActivity3.class);
+        Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
 }
