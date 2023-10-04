@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFinal">
+
+    <TextView
+        android:id="@+id/name_end_game"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="220dp"
+        android:text="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="135dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="184dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_end_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_end_game" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="292dp"
+        android:text="Puntuacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_points"
+        android:layout_width="138dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="164dp"
+        app:layout_constraintBottom_toBottomOf="@+id/points"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/points" />
+
+    <TextView
+        android:id="@+id/text_final_message"
+        android:layout_width="235dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="380dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/final_btm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="532dp"
+        android:text="Salir"
+        android:onClick="end_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="124dp"
+        android:textSize="20dp"
+        android:text="Fin del juego, estos son tus resultados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

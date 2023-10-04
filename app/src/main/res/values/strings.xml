@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo Componentes</string>
+    <string name="button_login">Iniciar Sesión</string>
+    <string name="Checkbox_deporte">Deporte</string>
+    <string name="Checkbox_musica">Musica</string>
+
+</resources>

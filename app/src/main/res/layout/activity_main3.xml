@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/Pregunta3_text"
+        android:layout_width="273dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="Tercera pregunta: a, b, c"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <RadioGroup
+        android:id="@+id/rg_p3"
+        android:layout_width="273dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="246dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pregunta3_text">
+
+        <RadioButton
+            android:id="@+id/opcion_a_p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. opcion a" />
+
+        <RadioButton
+            android:id="@+id/opcion_b_p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B. Opcion b" />
+
+        <RadioButton
+            android:id="@+id/opcion_c_p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C. Opcion c" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/enviar_btm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="150dp"
+        android:text="Enviar"
+        android:onClick="siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_p3" />
+
+    <Button
+        android:id="@+id/next_btm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="siguiente_pregunta"
+        android:enabled="false"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reiniciar_btm"
+        app:layout_constraintTop_toBottomOf="@+id/rg_p3" />
+
+    <Button
+        android:id="@+id/reiniciar_btm"
+        android:layout_width="101dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="119dp"
+        android:onClick="reiniciar_game"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_btm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enviar_btm"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
