@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6003A9F4"
     tools:context=".MainActivityFinal">
 
     <TextView
@@ -59,8 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
         android:layout_marginTop="532dp"
-        android:text="Salir"
         android:onClick="end_game"
+        android:text="Salir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,8 +71,8 @@
         android:layout_height="53dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="124dp"
-        android:textSize="20dp"
         android:text="Fin del juego, estos son tus resultados"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

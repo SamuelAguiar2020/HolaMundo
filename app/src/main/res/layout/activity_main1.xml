@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6003A9F4"
     tools:context=".MainActivity1">
 
     <TextView
         android:id="@+id/Pregunta1_text"
-        android:layout_width="278dp"
-        android:layout_height="76dp"
+        android:layout_width="303dp"
+        android:layout_height="91dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
+        android:background="@color/verde"
         android:drawableLeft="@drawable/think__2_"
         android:text="¿Cuál es la capital de Venezuela?"
         android:textSize="20dp"
@@ -79,8 +81,8 @@
         android:layout_marginTop="82dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="116dp"
-        android:onClick="siguiente_pregunta"
         android:enabled="false"
+        android:onClick="siguiente_pregunta"
         android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
