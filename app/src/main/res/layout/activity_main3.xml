@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/Pregunta3_text"
-        android:layout_width="292dp"
-        android:layout_height="91dp"
+        android:layout_width="296dp"
+        android:layout_height="101dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
+        android:drawableLeft="@drawable/think__2_"
         android:text="¿Quién fue el primer presidente de España tras el Franquismo?"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
