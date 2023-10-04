@@ -12,7 +12,7 @@
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
-        android:text="Segunda pregunta: a, b, c"
+        android:text="¿A qué elemento químico pertence el símbolo P?"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,19 +39,19 @@
             android:id="@+id/opcion_a_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A. opcion a" />
+            android:text="A. Menos de 1 hora" />
 
         <RadioButton
             android:id="@+id/opcion_b_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="B. Opcion b" />
+            android:text="B. Fósforo" />
 
         <RadioButton
             android:id="@+id/opcion_c_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="C. Opcion c" />
+            android:text="C. Más de 2 horas" />
     </RadioGroup>
 
     <Button

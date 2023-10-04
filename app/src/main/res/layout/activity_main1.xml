@@ -12,11 +12,11 @@
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
-        android:text="Primera pregunta: a, b, c"
+        android:text="¿Cuál es la capital de Venezuela?"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198" />
@@ -39,19 +39,19 @@
             android:id="@+id/opcion_a_p1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A. opcion a" />
+            android:text="A. Distrito Capital" />
 
         <RadioButton
             android:id="@+id/opcion_b_p1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="B. Opcion b" />
+            android:text="B. Bogotá" />
 
         <RadioButton
             android:id="@+id/opcion_c_p1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="C. Opcion c" />
+            android:text="C. Madrid" />
     </RadioGroup>
 
     <Button
