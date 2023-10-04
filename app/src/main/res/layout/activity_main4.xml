@@ -12,7 +12,7 @@
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
-        android:text="Cuarta pregunta: a, b, c"
+        android:text="¿En que año pisó la Luna el ser humano por primera vez?"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,19 +39,19 @@
             android:id="@+id/opcion_a_p4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A. opcion a" />
+            android:text="A. 2012" />
 
         <RadioButton
             android:id="@+id/opcion_b_p4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="B. Opcion b" />
+            android:text="B. 1696" />
 
         <RadioButton
             android:id="@+id/opcion_c_p4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="C. Opcion c" />
+            android:text="C. 1969" />
     </RadioGroup>
 
     <Button

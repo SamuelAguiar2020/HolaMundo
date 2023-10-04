@@ -39,7 +39,7 @@
             android:id="@+id/opcion_a_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A. Menos de 1 hora" />
+            android:text="A. Paladio" />
 
         <RadioButton
             android:id="@+id/opcion_b_p2"
@@ -51,7 +51,7 @@
             android:id="@+id/opcion_c_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="C. Más de 2 horas" />
+            android:text="C. Platino" />
     </RadioGroup>
 
     <Button
